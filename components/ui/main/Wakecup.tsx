@@ -1,7 +1,6 @@
 import Link from "next/link";
 import Button from "../Button";
 import ModalTriggerButton from "../modal/ModalTriggerButton";
-import WakecupApplication from "../modal/WakecupApplication";
 
 export default function Wakecup() {
 	return (
@@ -34,7 +33,6 @@ export default function Wakecup() {
 					</div>
 				</div>
 			</div>
-			<WakecupApplication />
 		</>
 	);
 }

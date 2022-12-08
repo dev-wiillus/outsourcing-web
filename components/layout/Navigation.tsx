@@ -1,8 +1,9 @@
 import Link from "next/link";
 
 const menu = [
-	{ name: "텀블러 공유", path: "/wakecup" },
-	{ name: "파트너십", path: "/partnership" },
+	{ name: "OUR PARTNERS", path: "/partners" },
+	{ name: "OUR SERVICES", path: "/services" },
+	{ name: "CONTACT US", path: "/contact-us" },
 ];
 
 function Navigation() {

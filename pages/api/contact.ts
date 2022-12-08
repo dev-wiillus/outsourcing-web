@@ -1,17 +1,17 @@
 import { Client } from "@notionhq/client";
 import { NextApiRequest, NextApiResponse } from "next";
-import { IForm } from "../../components/ui/modal/ServiceApplication";
+import { IForm } from "../../components/ui/contact_us/Form";
 
 export default async function handler(
 	req: NextApiRequest,
 	res: NextApiResponse,
 ) {
-	try { 
-		const database_id = process.env.NOTION_DATABASE_ID_SERVICE
+	try {
+		const database_id = process.env.NOTION_DATABASE_ID_SERVICE;
 		if (req.method === "POST" && database_id) {
 			const data = req.body;
 
-			const { name, phone, gender, age } =
+			const { company, name, phone, email, contactType, description } =
 				data as unknown as IForm;
 
 			const notion = new Client({
@@ -21,7 +21,7 @@ export default async function handler(
 			const result = await notion.pages.create({
 				parent: {
 					type: "database_id",
-					database_id
+					database_id,
 				},
 				properties: {
 					name: {
@@ -42,12 +42,12 @@ export default async function handler(
 							},
 						],
 					},
-					age: {
-						select: { name: age },
-					},
-					gender: {
-						select: { name: gender },
-					},
+					// age: {
+					// 	select: { name: age },
+					// },
+					// gender: {
+					// 	select: { name: gender },
+					// },
 				},
 			});
 

@@ -7,7 +7,7 @@ import Script from "next/script";
 export default function App({ Component, pageProps }: AppProps) {
 	return (
 		<>
-			<Script
+			{/* <Script
 				strategy="afterInteractive"
 				src={`https://www.googletagmanager.com/gtag/js?id=${process.env.GA_TRACKING_ID}`}
 			/>
@@ -19,7 +19,7 @@ export default function App({ Component, pageProps }: AppProps) {
 			
 					gtag('config', '${process.env.GA_TRACKING_ID}');
 				`}
-			</Script>
+			</Script> */}
 			<NotificationContextProvider>
 				<Layout>
 					<Component {...pageProps} />

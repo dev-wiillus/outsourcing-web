@@ -1,15 +1,11 @@
-# BTRC Static WEB
+# Outsourcing WEB
 
-## 기능 정의
+## todo
 
-- [x] Routing
-- [x] SEO
-- [ ] video/image rendering
+- [ ] slack api message
+- [ ] SEO
+- [ ] DB 연동
 - [ ] animation effect
-- [x] responsive web
-- [x] DB 연동(CR)
-- [x] 폰트
-
 
 ## spec
 

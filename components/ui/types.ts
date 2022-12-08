@@ -4,17 +4,9 @@ export interface RadioOptionProps {
 	checked?: boolean;
 }
 
-export type GenderType = "female" | "male" | "unselected";
-export type AgeType = "20" | "30" | "40" | "50+";
-
-export type AdPlanType = "basic" | "premium";
+export type ContactType = "marketing" | "branding" | "planning" | "etc";
 
 export type ApiResponseType = {
 	ok: boolean;
 	message: string;
 };
-
-export type AuthenticationType = {
-	phone: string;
-	code: string;
-}
