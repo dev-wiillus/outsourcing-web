@@ -1,4 +1,5 @@
 # Outsourcing WEB
+외주 서비스 웹페이지
 
 ## todo
 
@@ -14,3 +15,4 @@
 - NextJS
 - React Hook Form
 - Typescript
+
