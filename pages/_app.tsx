@@ -3,6 +3,7 @@ import type { AppProps } from "next/app";
 import Layout from "../components/layout/Layout";
 import { NotificationContextProvider } from "../store/notification-context";
 import Script from "next/script";
+import "animate.css";
 
 export default function App({ Component, pageProps }: AppProps) {
 	return (

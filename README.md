@@ -7,6 +7,7 @@
 - [ ] SEO
 - [ ] DB 연동
 - [ ] animation effect
+- [ ] 페이지내 이동링크
 
 ## spec
 

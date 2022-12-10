@@ -70,7 +70,7 @@ export default function Form() {
 
 	return (
 		<form
-			className="form-control gap-y-8 pt-[48px] md:gap-y-10"
+			className="form-control gap-y-8 md:gap-y-[92px]"
 			onSubmit={handleSubmit(onSubmit)}
 		>
 			<div className="form-control w-full items-start gap-4 text-[18px]">
@@ -80,7 +80,7 @@ export default function Form() {
 				<input
 					type="text"
 					placeholder="회사명"
-					className="input-bordered input w-full max-w-xs focus:border-secondary focus:text-secondary"
+					className="input-bordered input w-full focus:border-secondary focus:text-secondary"
 					{...register("company", { required: true })}
 				/>
 				{errors.company?.type === "required" && (
@@ -91,7 +91,7 @@ export default function Form() {
 				<input
 					type="text"
 					placeholder="담당자명"
-					className="input-bordered input w-full max-w-xs focus:border-secondary focus:text-secondary"
+					className="input-bordered input w-full focus:border-secondary focus:text-secondary"
 					{...register("name", { required: true })}
 				/>
 				{errors.name?.type === "required" && (
@@ -102,7 +102,7 @@ export default function Form() {
 				<input
 					type="text"
 					placeholder="전화번호"
-					className="input-bordered input w-full max-w-xs focus:border-secondary focus:text-secondary"
+					className="input-bordered input w-full focus:border-secondary focus:text-secondary"
 					{...register("phone", { required: true })}
 				/>
 				{errors.phone?.type === "required" && (
@@ -113,7 +113,7 @@ export default function Form() {
 				<input
 					type="email"
 					placeholder="이메일"
-					className="input-bordered input w-full max-w-xs focus:border-secondary focus:text-secondary"
+					className="input-bordered input w-full focus:border-secondary focus:text-secondary"
 					{...register("email", { required: true })}
 				/>
 				{errors.email?.type === "required" && (
@@ -155,13 +155,17 @@ export default function Form() {
 						문의 내용
 					</label>
 					<textarea
-						className="textarea-bordered textarea h-[200px] w-full max-w-xs focus:border-secondary focus:text-secondary"
+						className="textarea-bordered textarea h-[200px] w-full focus:border-secondary focus:text-secondary"
 						placeholder="문의 내용을 입력해주세요. (선택)"
 						{...register("description")}
 					/>
 				</div>
 			</div>
-			<Button className="btn-secondary mt-auto" disabled={!isValid}>
+			<Button
+				className="btn-primary"
+				// disabled={!isValid}
+				disabled
+			>
 				문의하기
 			</Button>
 		</form>

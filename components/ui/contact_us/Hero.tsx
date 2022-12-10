@@ -1,16 +1,27 @@
+import Link from "next/link";
+import Button from "../Button";
 import Container from "../Hero/Container";
 
 export default function Hero() {
 	return (
 		<Container
-			title="btrc"
-			bgSrcMobile="/images/main/bg_mobile.png"
-			bgSrcWeb="/images/main/bg_web.png"
+			title="contact"
+			bgSrcMobile="/images/contact/hero_bg.png"
+			bgSrcWeb="/images/contact/hero_bg.png"
+			className="items-center"
 		>
-			<div className="mt-auto mb-20 mr-6 text-right text-[40px] leading-[49px] md:mr-[40px] md:text-[80px] md:leading-[98px]">
-				<div className="font-chaney">
-					<h1>Grow your</h1>
-					<h1 className="mt-1 text-primary">Business</h1>
+			<div className="absolute inset-0 z-[-1] h-full w-full bg-black opacity-20" />
+			<div className="text-[60px] leading-[72.61px] text-white">
+				<div className="font-bold">
+					<h1>Meet with</h1>
+					<h1 className="mt-1">team slash</h1>
+				</div>
+				<div className="mt-[21px]">
+					<Link href="contact-us">
+						<Button className="btn-primary rounded-full md:w-[272px]">
+							문의하기
+						</Button>
+					</Link>
 				</div>
 			</div>
 		</Container>

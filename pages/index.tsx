@@ -1,33 +1,29 @@
 import Head from "next/head";
 import { Fragment } from "react";
-import Brand from "../components/ui/main/Brand";
-import ESG from "../components/ui/main/ESG";
-import Guide from "../components/ui/main/Guide";
+import Contact from "../components/ui/main/Contact";
 import Hero from "../components/ui/main/Hero";
-import Identity from "../components/ui/main/Identity";
-import Quote from "../components/ui/main/Quote";
-import Wakecup from "../components/ui/main/Wakecup";
+import How from "../components/ui/main/How";
+import Partners from "../components/ui/main/Partners";
+import Service from "../components/ui/main/Service";
+import Target from "../components/ui/main/Target";
 
 // TODO: add favicon
 export default function HomePage(props: any) {
 	return (
 		<Fragment>
 			<Head>
-				<title>BTRC | 지금 우리의 리얼리-사이클</title>
+				<title>윌러스 | 파트너스</title>
 				<meta
 					name="description"
-					content="가장 쉬운 실천 #텀블러 #아메리카노 #커피 #광고"
+					content="국내외 유수 기업부터 스타트업까지, 다양한 백그라운드의 마케팅, 브랜딩, 제품기획가가 함께 합니다"
 				/>
 			</Head>
 			<Hero />
-			<Guide />
-			<Identity />
-			<div className="grid grid-cols-1 md:grid-cols-2">
-				<ESG />
-				<Brand />
-			</div>
-			<Quote />
-			<Wakecup />
+			<Target />
+			<Partners />
+			<How />
+			<Service />
+			<Contact />
 		</Fragment>
 	);
 }

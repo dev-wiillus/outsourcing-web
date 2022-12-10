@@ -5,6 +5,7 @@ type InputProps = {
 	bgSrcMobile: string;
 	bgSrcWeb: string;
 	title: string;
+	className?: string;
 };
 
 export default function Container({
@@ -12,25 +13,26 @@ export default function Container({
 	bgSrcMobile,
 	bgSrcWeb,
 	title,
+	className,
 }: InputProps) {
 	return (
-		<div className="relative flex h-screen flex-col md:h-[720px]">
+		<div
+			className={`relative flex h-screen flex-auto flex-col justify-center ${
+				className || ""
+			}`}
+		>
 			<ResponsiveImage
 				mobile={{
 					src: bgSrcMobile,
 					alt: title,
 					fill: true,
-					objectFit: "cover",
-					objectPosition: "center",
-					className: "z-[-1]",
+					className: "z-[-2]",
 				}}
 				web={{
 					src: bgSrcWeb,
 					alt: title,
 					fill: true,
-					objectFit: "cover",
-					objectPosition: "center",
-					className: "z-[-1]",
+					className: "z-[-2]",
 				}}
 			/>
 			{children}

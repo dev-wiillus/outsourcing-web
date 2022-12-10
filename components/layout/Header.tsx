@@ -6,7 +6,12 @@ function Header() {
 	return (
 		<header className="absolute z-10 flex h-[56px] w-full items-center justify-between px-4 md:container md:px-10">
 			<Link href="/">
-				<Image src="/images/logo/BTRC.png" alt="Logo" width={101} height={30} />
+				<Image
+					src="/images/logo/Wiillus.png"
+					alt="Logo"
+					width={101}
+					height={30}
+				/>
 			</Link>
 			<Navigation />
 		</header>
