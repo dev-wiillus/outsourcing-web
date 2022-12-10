@@ -3,7 +3,7 @@ import ServiceCard from "./ServiceCard";
 
 export default function Service() {
 	return (
-		<div className="flex w-full flex-col">
+		<div id="service" className="flex w-full flex-col">
 			<div className="relative flex flex-col py-24 text-center font-bold">
 				<span className="text-2xl text-primary">WHAT WE OFFER</span>
 

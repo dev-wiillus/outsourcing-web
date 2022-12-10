@@ -17,7 +17,7 @@ export default function Hero() {
 					<h1 className="mt-1">team slash</h1>
 				</div>
 				<div className="mt-[21px]">
-					<Link href="contact-us">
+					<Link href="#contact-application">
 						<Button className="btn-primary rounded-full md:w-[272px]">
 							문의하기
 						</Button>

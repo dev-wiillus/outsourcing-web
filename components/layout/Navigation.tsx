@@ -1,8 +1,8 @@
 import Link from "next/link";
 
 const menu = [
-	{ name: "OUR PARTNERS", path: "/partners" },
-	{ name: "OUR SERVICES", path: "/services" },
+	{ name: "OUR PARTNERS", path: "/#partners" },
+	{ name: "OUR SERVICES", path: "/#service" },
 	{ name: "CONTACT US", path: "/contact-us" },
 ];
 

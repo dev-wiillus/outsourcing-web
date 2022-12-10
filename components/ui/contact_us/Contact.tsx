@@ -2,7 +2,10 @@ import Form from "./Form";
 
 export default function Contact() {
 	return (
-		<div className="mt-[120px] mb-[105px] flex flex-col items-center gap-y-[106px]">
+		<div
+			id="contact-application"
+			className="mt-[120px] mb-[105px] flex flex-col items-center gap-y-[106px]"
+		>
 			<div className="flex flex-col items-center gap-y-[36px]">
 				<div className="text-center text-[60px] font-bold leading-[72.61px]">
 					<h1>Let&apos;s make</h1>

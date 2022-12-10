@@ -2,7 +2,10 @@ import Image from "next/image";
 
 export default function Partners() {
 	return (
-		<div className="mt-[119px] flex h-screen flex-col items-center gap-y-[119px]">
+		<div
+			id="partners"
+			className="mt-[119px] flex h-screen flex-col items-center gap-y-[119px]"
+		>
 			<div className="text-[60px] font-bold leading-[72.61px]">
 				<h1>Our Partners</h1>
 			</div>
