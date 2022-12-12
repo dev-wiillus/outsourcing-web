@@ -35,23 +35,23 @@ const partners = [
 
 export default function Partners() {
 	return (
-		<div
-			id="partners"
-			className="mt-[119px] flex h-screen flex-col items-center gap-y-[119px]"
-		>
-			<div className="text-[60px] font-bold leading-[72.61px]">
+		<div id="partners" className="my-8 flex flex-col items-center gap-y-12">
+			{/* <div className="text-[60px] font-bold leading-[72.61px]">
 				<h1>Our Partners</h1>
-			</div>
-			<div className="grid grid-cols-4 grid-rows-3 items-center gap-x-[66px] gap-y-[90px]">
-				{partners.map(({ image }, index) => (
-					<Image
-						alt={`logo-${image.split(".")[0]}`}
-						src={`/images/logo/${image}`}
-						width={181}
-						height={48}
-						key={index}
-					/>
-				))}
+			</div> */}
+			<div className="slider">
+				<div className="slide-track gap-x-32">
+					{partners.map(({ image }, index) => (
+						<div className="slide" key={index}>
+							<Image
+								alt={`logo-${image.split(".")[0]}`}
+								src={`/images/logo/${image}`}
+								width={181}
+								height={48}
+							/>
+						</div>
+					))}
+				</div>
 			</div>
 		</div>
 	);

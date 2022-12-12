@@ -30,7 +30,7 @@ export default function Portfolio() {
 		}
 	});
 	return (
-		<div className="portfolio-container flex h-screen flex-col items-center pb-[120px]">
+		<div className="portfolio-container flex h-[720px] flex-col items-center pb-[120px]">
 			<div className="my-20 text-[60px] font-bold leading-[72.61px]">
 				<h1>Portfolio</h1>
 			</div>

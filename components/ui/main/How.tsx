@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function How() {
 	return (
-		<div className="relative flex h-screen flex-col">
+		<div className="relative flex h-[720px] flex-col">
 			<Image
 				alt="target-bg"
 				src="/images/main/how_bg.png"

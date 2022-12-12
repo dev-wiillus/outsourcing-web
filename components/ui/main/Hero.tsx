@@ -2,6 +2,7 @@ import Link from "next/link";
 import Button from "../Button";
 import Container from "../Hero/Container";
 
+// TODO: 화면 top에 걸리면 애니메이션에 따라 스크롤 이동됨
 export default function Hero() {
 	return (
 		<Container

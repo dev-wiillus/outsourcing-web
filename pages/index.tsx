@@ -21,8 +21,8 @@ export default function HomePage(props: any) {
 			</Head>
 			<Hero />
 			<Target />
-			<Portfolio />
 			<Partners />
+			<Portfolio />
 			<How />
 			<Service />
 			<Contact />

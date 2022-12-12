@@ -5,7 +5,7 @@ import Button from "../Button";
 export default function Contact() {
 	return (
 		<>
-			<div className="relative flex h-screen flex-col justify-center">
+			<div className="relative flex h-[720px] flex-col justify-center">
 				<Image
 					alt="target-bg"
 					src="/images/main/contact_bg.png"

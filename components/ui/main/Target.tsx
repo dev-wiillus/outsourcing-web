@@ -1,8 +1,37 @@
 import Image from "next/image";
+import { useEffect } from "react";
+import useGsap from "../../utils/useGsap";
 
 export default function Target() {
+	// TODO: 스크롤에 따라 배경 확대, 텍스트 바텀업
+	const gsap = useGsap();
+	useEffect(() => {
+		const targetContainer = document.querySelector(".target-container");
+		const container = document.querySelector(".target");
+		if (container) {
+			const tl = gsap.timeline({
+				scrollTrigger: {
+					pin: true,
+					scrub: 1,
+					trigger: targetContainer,
+					end: () =>
+						container.scrollWidth - document.documentElement.clientWidth,
+				},
+				defaults: { ease: "none", duration: 1 },
+			});
+
+			tl.to(".parallax", { x: 300 }).to(
+				".panel",
+				{
+					x: () =>
+						-(container.scrollWidth - document.documentElement.clientWidth),
+				},
+				0,
+			);
+		}
+	});
 	return (
-		<div className="relative flex h-screen flex-col">
+		<div className="target-container relative flex h-[720px] flex-col">
 			<Image
 				alt="target-bg"
 				src="/images/main/target_bg.png"
