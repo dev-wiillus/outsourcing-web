@@ -43,3 +43,77 @@
     opacity: 1;
   }
 }
+
+.flip-text {
+  height: 72.61px;
+  overflow: hidden;
+}
+
+.flip-text h1:first-child {
+  animation: text-animation 8s infinite;
+}
+
+
+@keyframes text-animation {
+  0% {margin-top: 0;}
+  11.5% {margin-top: 0;}
+  16.5% {margin-top: -72.61px;}
+  28% {margin-top: -72.61px;}
+  33% {margin-top: -145.22px;}
+  44.5% {margin-top: -145.22px;}
+  49.5% {margin-top: -217.83px;}
+  61% {margin-top: -217.83px;}
+  66% {margin-top: -145.22px;}
+  77.5% {margin-top: -145.22px;}
+  82.5% {margin-top: -72.61px;}
+  94% {margin-top: -72.61px;}
+  100% {margin-top: 0;}
+}
+
+#portfolio-item:hover > #mask {
+    display: block;
+    
+}
+
+#portfolio-item:not(:hover) > #mask {
+    display: hidden;
+}
+
+#portfolio-item:hover > #mask-text {
+  position: absolute;
+  white-space: nowrap;
+  opacity: 100%;
+  animation: floatText 20s;
+}
+
+@keyframes floatText{
+  from {
+    left: 0%;
+    opacity: 0%;
+  }
+  3% {
+    left: 0%;
+    opacity: 0%;
+  }
+  6% {
+    left: 0%;
+    opacity: 100%;
+  }
+  to {
+    left: -300%;
+    opacity: 100%;
+  }
+}
+
+.panel {
+  display: flex;
+  flex: 0 0 33%;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  height: 100%;
+  padding: 10rem 7rem 2rem 7rem;
+  background-color: transparent;
+  overflow: hidden;
+}

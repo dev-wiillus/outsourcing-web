@@ -11,8 +11,21 @@ export default function Hero() {
 		>
 			<div className="ml-[126px] text-[60px] leading-[72.61px]">
 				<div className="font-bold">
-					<h1>Grow your</h1>
-					<h1 className="mt-1 text-primary">Business</h1>
+					<div className="flex gap-x-4">
+						<div className="flip-text">
+							<h1>Grow</h1>
+							<h1>Build</h1>
+							<h1>Make</h1>
+							<h1>Boost</h1>
+						</div>
+						<h1>your</h1>
+					</div>
+					<div className="flip-text mt-1 text-primary">
+						<h1>Business</h1>
+						<h1>Brand</h1>
+						<h1>Products</h1>
+						<h1>Sales</h1>
+					</div>
 				</div>
 				<div className="mt-[21px]">
 					<Link href="contact-us">

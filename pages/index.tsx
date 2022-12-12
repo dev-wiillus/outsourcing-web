@@ -4,6 +4,7 @@ import Contact from "../components/ui/main/Contact";
 import Hero from "../components/ui/main/Hero";
 import How from "../components/ui/main/How";
 import Partners from "../components/ui/main/Partners";
+import Portfolio from "../components/ui/main/Portfolio";
 import Service from "../components/ui/main/Service";
 import Target from "../components/ui/main/Target";
 
@@ -20,6 +21,7 @@ export default function HomePage(props: any) {
 			</Head>
 			<Hero />
 			<Target />
+			<Portfolio />
 			<Partners />
 			<How />
 			<Service />

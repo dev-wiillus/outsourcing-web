@@ -4,6 +4,9 @@ import Layout from "../components/layout/Layout";
 import { NotificationContextProvider } from "../store/notification-context";
 import Script from "next/script";
 import "animate.css";
+import { gsap } from "gsap";
+import { CSSPlugin } from "gsap/CSSPlugin";
+gsap.registerPlugin(CSSPlugin);
 
 export default function App({ Component, pageProps }: AppProps) {
 	return (
