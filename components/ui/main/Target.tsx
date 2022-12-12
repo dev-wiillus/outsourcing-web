@@ -3,48 +3,50 @@ import { useEffect } from "react";
 import useGsap from "../../utils/useGsap";
 
 export default function Target() {
-	// TODO: 스크롤에 따라 배경 확대, 텍스트 바텀업
 	const gsap = useGsap();
 	useEffect(() => {
-		const targetContainer = document.querySelector(".target-container");
-		const container = document.querySelector(".target");
+		const container = document.querySelector(".target-container");
 		if (container) {
 			const tl = gsap.timeline({
 				scrollTrigger: {
 					pin: true,
 					scrub: 1,
-					trigger: targetContainer,
+					trigger: container,
+					start: "top center",
 					end: () =>
-						container.scrollWidth - document.documentElement.clientWidth,
+						container.scrollHeight - document.documentElement.clientHeight,
 				},
 				defaults: { ease: "none", duration: 1 },
 			});
 
-			tl.to(".parallax", { x: 300 }).to(
-				".panel",
+			tl.to(
+				".target-bg",
 				{
-					x: () =>
-						-(container.scrollWidth - document.documentElement.clientWidth),
+					transform: "scale(1.2)",
 				},
+				0,
+			).from(
+				".target-message",
+				{ y: 100, opacity: 0, stagger: 0.4, duration: 0.8, delay: 2 },
 				0,
 			);
 		}
 	});
 	return (
-		<div className="target-container relative flex h-[720px] flex-col">
+		<div className="target-container relative flex h-[720px] flex-col overflow-hidden">
 			<Image
 				alt="target-bg"
 				src="/images/main/target_bg.png"
 				fill
-				className="z-[-2]"
+				className="target-bg z-[-2]"
 			/>
 			<div className="absolute inset-0 z-[-1] h-full w-full bg-black opacity-20" />
 			<div className="flex flex-auto flex-col items-center justify-center gap-y-[43px] text-center">
-				<div className="text-[60px] font-bold leading-[72.61px]">
+				<div className="target-message text-[60px] font-bold leading-[72.61px]">
 					<h1>Major company to</h1>
 					<h1 className="text-primary">Startups</h1>
 				</div>
-				<div className="text-[30px] leading-[36.31px]">
+				<div className="target-message text-[30px] leading-[36.31px]">
 					<p>국내외 유수 기업부터 스타트업까지,</p>
 					<p>다양한 백그라운드의 마케팅, 브랜딩, 제품기획가가 함께 합니다</p>
 				</div>
