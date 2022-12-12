@@ -16,7 +16,7 @@ export interface IForm {
 	phone: string;
 	email: string;
 	contactType: ContactType;
-	description: string;
+	description?: string;
 }
 
 export default function Form() {
@@ -35,7 +35,7 @@ export default function Form() {
 			status: "pending",
 		});
 
-		fetch("/api/service", {
+		fetch("/api/contact", {
 			method: "POST",
 			body: JSON.stringify(data),
 			headers: {
@@ -161,11 +161,7 @@ export default function Form() {
 					/>
 				</div>
 			</div>
-			<Button
-				className="btn-primary"
-				// disabled={!isValid}
-				disabled
-			>
+			<Button className="btn-primary" disabled={!isValid}>
 				문의하기
 			</Button>
 		</form>

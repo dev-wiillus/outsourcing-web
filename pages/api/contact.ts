@@ -7,7 +7,7 @@ export default async function handler(
 	res: NextApiResponse,
 ) {
 	try {
-		const database_id = process.env.NOTION_DATABASE_ID_SERVICE;
+		const database_id = process.env.NOTION_DATABASE_ID_CONTACT;
 		if (req.method === "POST" && database_id) {
 			const data = req.body;
 
@@ -24,6 +24,15 @@ export default async function handler(
 					database_id,
 				},
 				properties: {
+					company: {
+						rich_text: [
+							{
+								text: {
+									content: company,
+								},
+							},
+						],
+					},
 					name: {
 						title: [
 							{
@@ -34,22 +43,30 @@ export default async function handler(
 						],
 					},
 					phone: {
-						rich_text: [
-							{
-								text: {
-									content: phone,
-								},
-							},
-						],
+						phone_number: phone
 					},
-					// age: {
-					// 	select: { name: age },
-					// },
-					// gender: {
-					// 	select: { name: gender },
-					// },
+					email: {
+						email,
+					},
+					contactType: {
+						select: { name: contactType },
+					},
+					...(description && {
+						description: {
+							rich_text: [
+								{
+									text: {
+										content: description,
+									},
+								},
+							],
+						},
+					}),
 				},
 			});
+			if (!result) {
+				throw new Error("Fail");
+			}
 
 			res.status(201).json({ ok: true, message: "Success" });
 		}
