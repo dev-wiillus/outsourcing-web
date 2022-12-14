@@ -1,11 +1,9 @@
 import Image from "next/image";
 import { useLayoutEffect } from "react";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-
-gsap.registerPlugin(ScrollTrigger);
+import useGsap from "../../utils/useGsap";
 
 export default function Target() {
+	const gsap = useGsap();
 	useLayoutEffect(() => {
 		const container = document.querySelector(".target-container");
 		if (container) {
@@ -34,11 +32,10 @@ export default function Target() {
 				0,
 			);
 			return () => {
-				tl.pause().kill();
-				ScrollTrigger.killAll();
+				tl.revert();
 			};
 		}
-	}, []);
+	}, [gsap]);
 	return (
 		<div className="target-container relative flex h-[720px] flex-col overflow-hidden">
 			<Image

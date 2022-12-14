@@ -1,37 +1,40 @@
 import Image from "next/image";
-// import { useLayoutEffect } from "react";
-// import useGsap from "../../utils/useGsap";
+import { useLayoutEffect } from "react";
+import useGsap from "../../utils/useGsap";
 
 export default function How() {
-	// const gsap = useGsap();
-	// useLayoutEffect(() => {
-	// 	const container = document.querySelector(".how-container");
-	// 	if (container) {
-	// 		const tl = gsap.timeline({
-	// 			scrollTrigger: {
-	// 				pin: true,
-	// 				scrub: 1,
-	// 				trigger: container,
-	// 				start: "top center",
-	// 				end: () =>
-	// 					container.scrollHeight - document.documentElement.clientHeight,
-	// 			},
-	// 			defaults: { ease: "none", duration: 1 },
-	// 		});
+	const gsap = useGsap();
+	useLayoutEffect(() => {
+		const container = document.querySelector(".how-container");
+		if (container) {
+			const tl = gsap.timeline({
+				scrollTrigger: {
+					pin: true,
+					scrub: 1,
+					trigger: container,
+					start: "top center",
+					end: () =>
+						container.scrollHeight - document.documentElement.clientHeight,
+				},
+				defaults: { ease: "none", duration: 1 },
+			});
 
-	// 		tl.to(
-	// 			".how-bg",
-	// 			{
-	// 				transform: "scale(1.2)",
-	// 			},
-	// 			0,
-	// 		).from(
-	// 			".how-message",
-	// 			{ y: 100, opacity: 0, stagger: 0.4, duration: 0.8, delay: 2 },
-	// 			0,
-	// 		);
-	// 	}
-	// });
+			tl.to(
+				".how-bg",
+				{
+					transform: "scale(1.2)",
+				},
+				0,
+			).from(
+				".how-message",
+				{ y: 100, opacity: 0, stagger: 0.4, duration: 0.8, delay: 2 },
+				0,
+			);
+			return () => {
+				tl.revert();
+			};
+		}
+	});
 	return (
 		<div className="how-container relative flex h-[720px] flex-col overflow-hidden">
 			<Image
