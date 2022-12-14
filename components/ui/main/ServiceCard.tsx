@@ -17,16 +17,16 @@ export default function ServiceCard({ contentProps }: InputProps) {
 				{contentProps.title}
 			</h3>
 
-			<div className="text-[18px] font-semibold leading-[26px] text-text-secondary">
+			<p className="break-keep text-[18px] font-semibold leading-[26px] text-text-secondary">
 				{contentProps.content.map((content, index) => (
-					<div key={index}>
-						<span>{content}</span>
+					<span key={index}>
+						{content}
 						{index + 1 !== contentProps.content.length && (
 							<span className="mx-1 text-text-primary">&</span>
 						)}
-					</div>
+					</span>
 				))}
-			</div>
+			</p>
 		</div>
 	);
 }
