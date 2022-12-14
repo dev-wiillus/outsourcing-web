@@ -2,22 +2,22 @@ import Image from "next/image";
 
 const partners = [
 	{
-		image: "Samsung.png",
+		image: "samsung.png",
 	},
 	{
 		image: "lge.png",
 	},
 	{
-		image: "mcdonalds.jpeg",
+		image: "mcdonalds.png",
 	},
 	{
-		image: "bc-card.gif",
+		image: "bc.png",
 	},
 	{
 		image: "bentley.png",
 	},
 	{
-		image: "memebox.jpeg",
+		image: "memebox.png",
 	},
 	{
 		image: "vego.png",

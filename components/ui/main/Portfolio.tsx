@@ -31,7 +31,7 @@ export default function Portfolio() {
 
 const portfolios = [
 	{
-		image: "/images/logo/Samsung.png",
+		image: "/images/logo/samsung.png",
 		title: "삼성전자",
 		description:
 			"갤럭시S / 노트 런칭 캠페인 (Strategic Planning / Website / Influencer / Performance Marketing)",
@@ -43,7 +43,7 @@ const portfolios = [
 			"삼성페이 글로벌 런칭 캠페인 (Strategic Planning / App / SNS Marketing / Consumer Survey)",
 	},
 	{
-		image: "/images/logo/Samsung.png",
+		image: "/images/logo/samsung.png",
 		title: "삼성전자",
 		description:
 			"삼성전자 B2B 온라인 마케팅 (Strategic Planning / SNS Marketing / Video / Stakeholder Engagement)",
@@ -61,12 +61,12 @@ const portfolios = [
 			"SNS 마케팅 / 히어로 콘텐츠 제작 (Strategic Planning / SNS Marketing / Video)",
 	},
 	{
-		image: "/images/logo/memebox.jpeg",
+		image: "/images/logo/memebox.png",
 		title: "미미박스",
 		description: "미디어 제휴 (Stakeholder Engagement / PR)",
 	},
 	{
-		image: "/images/logo/mcdonalds.jpeg",
+		image: "/images/logo/mcdonalds.png",
 		title: "맥도날드",
 		description:
 			"리브랜딩 / 마케팅 전략 (Strategic Planning / BC카드 - 미디어 제휴 (Video / SNS Marketing)",
