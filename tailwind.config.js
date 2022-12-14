@@ -27,6 +27,8 @@ module.exports = {
 				"hero-hangle": ["SB AggroOTF"],
 				chaney: ["CHANEY"],
 				pretendard: ["Pretendard"],
+				ubuntu: ["Ubuntu"],
+				custom: ["Ubuntu", "Pretendard"],
 			},
 			fontSize: {
 				"2xs": "0.625rem",

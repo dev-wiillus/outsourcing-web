@@ -5,7 +5,7 @@ class BTRCDocument extends Document {
 		return (
 			<Html lang="ko">
 				<Head></Head>
-				<body className="font-pretendard">
+				<body className="font-custom">
 					<Main />
 					<NextScript />
 					<div id="notifications"></div>

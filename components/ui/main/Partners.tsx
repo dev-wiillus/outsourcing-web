@@ -35,12 +35,15 @@ const partners = [
 
 export default function Partners() {
 	return (
-		<div id="partners" className="my-8 flex flex-col items-center gap-y-12">
-			{/* <div className="text-[60px] font-bold leading-[72.61px]">
-				<h1>Our Partners</h1>
-			</div> */}
+		<div
+			id="partners"
+			className="mt-40 mb-12 flex flex-col items-center gap-y-12"
+		>
+			<div className="text-[30px] font-bold leading-[36.3px]">
+				<h1>These companies already trust us</h1>
+			</div>
 			<div className="slider">
-				<div className="slide-track gap-x-32">
+				<div className="slide-track gap-x-20">
 					{partners.map(({ image }, index) => (
 						<div className="slide" key={index}>
 							<Image
