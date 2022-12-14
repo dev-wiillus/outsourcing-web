@@ -4,7 +4,7 @@ export default function Contact() {
 	return (
 		<div
 			id="contact-application"
-			className="mt-[120px] mb-[105px] flex flex-col items-center gap-y-[106px]"
+			className="flex flex-col items-center gap-y-[106px] pt-[120px] pb-[105px]"
 		>
 			<div className="flex flex-col items-center gap-y-[36px]">
 				<div className="text-center text-[60px] font-bold leading-[72.61px]">
