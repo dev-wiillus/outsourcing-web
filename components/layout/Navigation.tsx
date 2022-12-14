@@ -12,10 +12,7 @@ function Navigation() {
 		<nav>
 			<ul className="flex">
 				{menu?.map(({ name, path }) => (
-					<li
-						key={path}
-						className="p-4 text-sm font-semibold text-primary md:p-6"
-					>
+					<li key={path} className="p-4 text-sm font-bold text-primary md:p-6">
 						<Link href={path}>{name}</Link>
 					</li>
 				))}

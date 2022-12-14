@@ -1,66 +1,27 @@
 import Image from "next/image";
-import { useEffect } from "react";
-import useGsap from "../../utils/useGsap";
 import ServiceCard from "./ServiceCard";
 
 export default function Service() {
-	// TODO: https://www.getrepeat.io/
-	const gsap = useGsap();
-	useEffect(() => {
-		const serviceContainer = document.querySelector(".service-container");
-		const container = document.querySelector(".service");
-		if (container) {
-			const tl = gsap.timeline({
-				scrollTrigger: {
-					pin: true,
-					scrub: 1,
-					trigger: serviceContainer,
-					end: () =>
-						container.scrollHeight - document.documentElement.clientHeight,
-				},
-				defaults: { ease: "none", duration: 1 },
-			});
-
-			tl.to(".parallax", { y: 300 })
-				.to(
-					".service-card",
-					{
-						y: () =>
-							-(container.scrollHeight - document.documentElement.clientHeight),
-					},
-					0,
-				)
-				.to(".service-card-mask", {
-					opacity: "50%",
-				});
-		}
-	});
 	return (
-		<div
-			id="service"
-			className="service-container flex h-screen w-full flex-col overflow-y-hidden"
-		>
-			<div className="relative flex h-[360px] flex-col py-24 text-center font-bold">
-				<span className="text-2xl text-primary">WHAT WE OFFER</span>
+		<div id="service" className="min-h-[720px] p-[50px]">
+			<div className="flex flex-col py-16 font-bold">
+				<span className="text-4xl text-primary">Services</span>
 
-				<h1 className="mt-2 text-6xl md:mt-8 lg:mt-0">
-					Services you will love
+				<h1 className="mt-2 text-[90px] leading-[101px] md:mt-8 lg:mt-0">
+					Super talented at...
 				</h1>
-				<div className="absolute bottom-6 left-1/2 -translate-x-1/2 opacity-70">
-					<Image
-						alt="down-arrow"
-						src="/down-arrow1.png"
-						width={36}
-						height={36}
-						// className="animate__animated animate__shakeY animate__infinite animate__slower"
-					/>
-				</div>
 			</div>
-			<div className="service flex-0 relative flex flex-col flex-nowrap overflow-y-hidden">
-				<div className="parallax" />
-				{services.map((service, index) => (
-					<ServiceCard key={index} {...service} />
-				))}
+			<div className="hero">
+				<div className="hero-content flex-col lg:flex-row">
+					<div className="relative h-[600px] w-[600px] flex-1">
+						<Image src="/images/main/service.png" alt="service-image" fill />
+					</div>
+					<div className="flex flex-1 flex-col gap-y-[50px]">
+						{services.map((service, index) => (
+							<ServiceCard key={index} {...service} />
+						))}
+					</div>
+				</div>
 			</div>
 		</div>
 	);
@@ -68,12 +29,6 @@ export default function Service() {
 
 const services = [
 	{
-		backgroundColor: "#9DA0A7",
-		imageProps: {
-			width: 600,
-			height: 609,
-			src: "/images/main/service_branding.png",
-		},
 		contentProps: {
 			title: "Branding",
 			content: [
@@ -84,12 +39,6 @@ const services = [
 		},
 	},
 	{
-		backgroundColor: "#B9A9E3",
-		imageProps: {
-			width: 600,
-			height: 609.17,
-			src: "/images/main/service_content.png",
-		},
 		contentProps: {
 			title: "Content",
 			content: [
@@ -100,12 +49,6 @@ const services = [
 		},
 	},
 	{
-		backgroundColor: "#ABD3F2",
-		imageProps: {
-			width: 600,
-			height: 600,
-			src: "/images/main/service_dev.png",
-		},
 		contentProps: {
 			title: "Dev",
 			content: [
@@ -116,12 +59,6 @@ const services = [
 		},
 	},
 	{
-		backgroundColor: "#F2CD91",
-		imageProps: {
-			width: 600,
-			height: 593,
-			src: "/images/main/service_marketing.png",
-		},
 		contentProps: {
 			title: "Marketing",
 			content: [
@@ -132,12 +69,6 @@ const services = [
 		},
 	},
 	{
-		backgroundColor: "#C8C6FC",
-		imageProps: {
-			width: 600,
-			height: 600,
-			src: "/images/main/service_newBiz.png",
-		},
 		contentProps: {
 			title: "New Biz",
 			content: [
