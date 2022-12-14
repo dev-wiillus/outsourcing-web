@@ -1,14 +1,17 @@
 import Image from "next/image";
-import { useEffect } from "react";
-import useGsap from "../../utils/useGsap";
+import { useLayoutEffect } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 export default function Target() {
-	const gsap = useGsap();
-	useEffect(() => {
+	useLayoutEffect(() => {
 		const container = document.querySelector(".target-container");
 		if (container) {
 			const tl = gsap.timeline({
 				scrollTrigger: {
+					id: "target",
 					pin: true,
 					scrub: 1,
 					trigger: container,
@@ -30,8 +33,12 @@ export default function Target() {
 				{ y: 100, opacity: 0, stagger: 0.4, duration: 0.8, delay: 2 },
 				0,
 			);
+			return () => {
+				tl.pause().kill();
+				ScrollTrigger.killAll();
+			};
 		}
-	});
+	}, []);
 	return (
 		<div className="target-container relative flex h-[720px] flex-col overflow-hidden">
 			<Image

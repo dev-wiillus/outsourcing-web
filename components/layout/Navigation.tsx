@@ -3,8 +3,7 @@ import Link from "next/link";
 const menu = [
 	{ name: "OUR PARTNERS", path: "/#partners" },
 	{ name: "OUR SERVICES", path: "/#service" },
-	{ name: "CONTACT US", path: "/contact-us" },
-	// TODO: contact us 에러
+	{ name: "CONTACT US", path: "contact-us" },
 ];
 
 function Navigation() {

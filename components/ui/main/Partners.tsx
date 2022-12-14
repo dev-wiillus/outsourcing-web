@@ -33,6 +33,7 @@ const partners = [
 	},
 ];
 
+const multipliedPartners = [...partners, ...partners, ...partners];
 export default function Partners() {
 	return (
 		<div
@@ -44,7 +45,7 @@ export default function Partners() {
 			</div>
 			<div className="slider">
 				<div className="slide-track gap-x-20">
-					{partners.map(({ image }, index) => (
+					{multipliedPartners.map(({ image }, index) => (
 						<div className="slide" key={index}>
 							<Image
 								alt={`logo-${image.split(".")[0]}`}

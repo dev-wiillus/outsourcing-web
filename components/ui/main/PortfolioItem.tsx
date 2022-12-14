@@ -17,6 +17,11 @@ export default function PortfolioItem({
 			id="portfolio-item"
 			className="relative cursor-pointer overflow-hidden"
 		>
+			<source
+				srcSet="/images/no-img.png"
+				type="image/error;
+		"
+			/>
 			<Image alt={`target-bg-${title}`} src={image} fill className="z-[-2]" />
 			<div
 				id="mask"
