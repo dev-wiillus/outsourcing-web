@@ -17,7 +17,7 @@ export default function Container({
 }: InputProps) {
 	return (
 		<div
-			className={`relative flex h-[720px] flex-auto flex-col justify-center ${
+			className={`relative flex h-screen flex-auto flex-col justify-center ${
 				className || ""
 			}`}
 		>

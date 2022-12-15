@@ -7,10 +7,10 @@ export default function Hero() {
 	return (
 		<Container
 			title="btrc"
-			bgSrcMobile="/images/main/hero_bg.png"
-			bgSrcWeb="/images/main/hero_bg.png"
+			bgSrcMobile="/images/main/hero_bg2.jpg"
+			bgSrcWeb="/images/main/hero_bg2.jpg"
 		>
-			<div className="ml-[126px] text-[60px] leading-[72.61px]">
+			<div className="mx-auto text-center text-[60px] leading-[72.61px]">
 				<div className="font-bold">
 					<div className="flex gap-x-4">
 						<div className="flip-text">

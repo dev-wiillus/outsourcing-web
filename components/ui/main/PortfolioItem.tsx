@@ -30,7 +30,7 @@ export default function PortfolioItem({
 			></div>
 			<div
 				id="mask-text"
-				className="top-1/2 -translate-y-1/2 px-2 font-bold text-white opacity-0"
+				className="top-1/2 flex -translate-y-1/2 flex-col gap-y-3 px-2 font-bold text-white opacity-0"
 			>
 				<h3 id="title" className="text-xl">
 					{title}
@@ -38,7 +38,7 @@ export default function PortfolioItem({
 				<span
 					id="desc"
 					// TODO: animation 작동 안함
-					className="mt-2 animate-[textLoop_20s_linear_infinite] text-5xl"
+					className="animate-[textLoop_20s_linear_infinite] text-5xl"
 				>
 					{description}
 				</span>
