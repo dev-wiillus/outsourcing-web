@@ -34,6 +34,16 @@ module.exports = {
 				"2xs": "0.625rem",
 				"3xs": "0.5rem",
 			},
+			keyframes: {
+				textLoop: {
+					"0%": {
+						transform: "translate3d(-10%, 0, 0)",
+					},
+					"100%": {
+						transform: "translate3d(-110%, 0, 0)",
+					},
+				},
+			}
 		},
 		container: {
 			center: true,

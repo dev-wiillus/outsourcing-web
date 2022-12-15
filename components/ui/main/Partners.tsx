@@ -36,13 +36,7 @@ const partners = [
 const multipliedPartners = [...partners, ...partners, ...partners];
 export default function Partners() {
 	return (
-		<div
-			id="partners"
-			className="mt-40 mb-12 flex flex-col items-center gap-y-12"
-		>
-			<div className="text-[30px] font-bold leading-[36.3px]">
-				<h1>These companies already trust us</h1>
-			</div>
+		<div id="partners" className="flex flex-col items-center gap-y-12">
 			<div className="slider">
 				<div className="slide-track gap-x-20">
 					{multipliedPartners.map(({ image }, index) => (

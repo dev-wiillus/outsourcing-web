@@ -5,7 +5,9 @@ export default function Service() {
 	return (
 		<div id="service" className="min-h-[720px] p-[50px]">
 			<div className="flex flex-col py-16 font-bold">
-				<span className="text-4xl text-primary">Services</span>
+				<span className=" text-[60px] font-bold leading-[72.61px] text-primary">
+					Our Services
+				</span>
 
 				<h1 className="mt-2 text-[90px] leading-[101px] md:mt-8 lg:mt-0">
 					Super talented at...

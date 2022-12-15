@@ -22,9 +22,9 @@ export default function HomePage(props: any) {
 			<Hero />
 			<Target />
 			<Partners />
-			<Portfolio />
 			<How />
 			<Service />
+			<Portfolio />
 			<Contact />
 		</Fragment>
 	);

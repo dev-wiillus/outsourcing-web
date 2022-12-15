@@ -99,25 +99,27 @@
   position: absolute;
   white-space: nowrap;
   opacity: 100%;
-  animation: floatText 20s;
+  animation: revealText 1.5s;
 }
 
-@keyframes floatText{
+@keyframes revealText {
   from {
-    left: 0%;
     opacity: 0%;
   }
-  3% {
-    left: 0%;
+  50% {
     opacity: 0%;
-  }
-  6% {
-    left: 0%;
-    opacity: 100%;
   }
   to {
-    left: -300%;
     opacity: 100%;
+  }
+}
+
+@keyframes textLoop {
+  0% {
+    transform: "translate3d(-10%, 0, 0)";
+  }
+  100% {
+    transform: "translate3d(-110%, 0, 0)";
   }
 }
 

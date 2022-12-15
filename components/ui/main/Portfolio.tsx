@@ -6,9 +6,15 @@ export default function Portfolio() {
 	const [expandAll, setExpandAll] = useState(false);
 
 	return (
-		<div className="flex flex-col items-center pb-[120px]">
-			<div className="my-20 text-[60px] font-bold leading-[72.61px]">
-				<h1>Portfolio</h1>
+		<div className="flex flex-col items-center px-[50px] py-[80px]">
+			<div className="flex flex-col self-start py-16 font-bold">
+				<span className=" text-[60px] font-bold leading-[72.61px] text-primary">
+					Our Portfolio
+				</span>
+
+				<h1 className="mt-2 text-[90px] leading-[101px] md:mt-8 lg:mt-0">
+					Featured projects
+				</h1>
 			</div>
 			<div className="w-full flex-auto">
 				<section role="list" className="relative grid w-full grid-cols-3">
@@ -31,74 +37,71 @@ export default function Portfolio() {
 
 const portfolios = [
 	{
-		image: "/images/logo/samsung.png",
-		title: "삼성전자",
-		description:
-			"갤럭시S / 노트 런칭 캠페인 (Strategic Planning / Website / Influencer / Performance Marketing)",
-	},
-	{
 		image: "/images/main/portfolio/galaxy-fold.jpg",
-		title: "삼성전자",
+		title: "삼성전자 - 갤럭시S / 노트 런칭 캠페인",
 		description:
-			"삼성페이 글로벌 런칭 캠페인 (Strategic Planning / App / SNS Marketing / Consumer Survey)",
+			"Strategic Planning / Website / Influencer / Performance Marketing",
 	},
 	{
-		image: "/images/logo/samsung.png",
-		title: "삼성전자",
+		image: "/images/main/portfolio/삼성페이.png",
+		title: "삼성전자 - 삼성페이 글로벌 런칭 캠페인",
+		description: "Strategic Planning / App / SNS Marketing / Consumer Survey",
+	},
+	{
+		image: "/images/main/portfolio/삼성전자B2B.webp",
+		title: "삼성전자 - B2B 온라인 마케팅",
 		description:
-			"삼성전자 B2B 온라인 마케팅 (Strategic Planning / SNS Marketing / Video / Stakeholder Engagement)",
+			"Strategic Planning / SNS Marketing / Video / Stakeholder Engagement",
 	},
 	{
-		image: "/images/logo/lge.png",
-		title: "LG전자",
-		description:
-			"G시리즈 인플루언서 캠페인 (Influencer / SNS Marketing / Blog)",
+		image: "/images/main/portfolio/LG전자.jpg",
+		title: "LG전자 - G시리즈 인플루언서 캠페인",
+		description: "Influencer / SNS Marketing / Blog",
 	},
 	{
-		image: "/images/logo/bentley.png",
-		title: "벤틀리",
-		description:
-			"SNS 마케팅 / 히어로 콘텐츠 제작 (Strategic Planning / SNS Marketing / Video)",
+		image: "/images/main/portfolio/벤틀리.png",
+		title: "벤틀리 - SNS 마케팅 / 히어로 콘텐츠 제작",
+		description: "Strategic Planning / SNS Marketing / Video",
 	},
 	{
-		image: "/images/logo/memebox.png",
-		title: "미미박스",
-		description: "미디어 제휴 (Stakeholder Engagement / PR)",
+		image: "/images/main/portfolio/미미박스.jpeg",
+		title: "미미박스 - 미디어 제휴",
+		description: "Stakeholder Engagement / PR",
 	},
 	{
-		image: "/images/logo/mcdonalds.png",
-		title: "맥도날드",
-		description:
-			"리브랜딩 / 마케팅 전략 (Strategic Planning / BC카드 - 미디어 제휴 (Video / SNS Marketing)",
+		image: "/images/main/portfolio/맥도날드.jpeg",
+		title: "맥도날드 - 리브랜딩 / 마케팅 전략",
+		description: "Strategic Planning",
 	},
 	{
-		image: "/images/logo/",
-		title: "SSG PAY",
-		description: "미디어 제휴, SNS 마케팅 (SNS Marketing / PR)",
+		image: "/images/main/portfolio/BC카드.png",
+		title: "BC카드 - 미디어 제휴",
+		description: "Video / SNS Marketing",
 	},
 	{
-		image: "/images/logo/the-sauce-lab.png",
-		title: "더소스랩",
-		description:
-			"상품기획, 플랫폼 입점, SNS 마케팅 (Strategic Planning / Re-branding / e-commerce)",
+		image: "/images/main/portfolio/SSG페이.jpeg",
+		title: "SSG PAY - 미디어 제휴, SNS 마케팅",
+		description: "SNS Marketing / PR",
 	},
 	{
-		image: "/images/logo/openfarm.png",
-		title: "오픈팜",
-		description:
-			"리브랜딩, 스마트스토어, 웹사이트 (Strategic Planning / Re-branding / Website)",
+		image: "/images/main/portfolio/더소스랩.png",
+		title: "더소스랩 - 상품기획, 플랫폼 입점, SNS 마케팅",
+		description: "Strategic Planning / Re-branding / e-commerce",
 	},
 	{
-		image: "/images/logo/vego.png",
-		title: "베테랑고",
-		description:
-			"웹사이트, 카카오 광고, 네이버 광고 (Strategic Planning / Website / Performance Marketing)",
+		image: "/images/main/portfolio/오픈팜.jpg",
+		title: "오픈팜 - 리브랜딩, 스마트스토어, 웹사이트",
+		description: "Strategic Planning / Re-branding / Website",
 	},
 	{
-		image: "/images/logo/sepingmall.png",
-		title: "세핑몰",
-		description:
-			"웹사이트, 구글/네이버 검색광고, 방송 광고 (Strategic Planning / Website / Performance Marketing)",
+		image: "/images/main/portfolio/베테랑고.png",
+		title: "베테랑고 - 웹사이트, 카카오 광고, 네이버 광고",
+		description: "Strategic Planning / Website / Performance Marketing",
+	},
+	{
+		image: "/images/main/portfolio/세핑몰.png",
+		title: "세핑몰 - 웹사이트, 구글/네이버 검색광고, 방송 광고",
+		description: "Strategic Planning / Website / Performance Marketing",
 	},
 ];
 
