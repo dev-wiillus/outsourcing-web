@@ -35,11 +35,7 @@ export default function PortfolioItem({
 				<h3 id="title" className="text-xl">
 					{title}
 				</h3>
-				<span
-					id="desc"
-					// TODO: animation 작동 안함
-					className="animate-[textLoop_20s_linear_infinite] text-5xl"
-				>
+				<span id="desc" className="text-5xl">
 					{description}
 				</span>
 			</div>

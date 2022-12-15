@@ -69,7 +69,7 @@
   animation: text-animation 8s infinite;
 }
 
-
+/* TODO: 같은 방향으로만 돌도록 */
 @keyframes text-animation {
   0% {margin-top: 0;}
   11.5% {margin-top: 0;}
@@ -100,6 +100,10 @@
   white-space: nowrap;
   opacity: 100%;
   animation: revealText 1.5s;
+}
+
+#portfolio-item:hover > #mask-text > #desc {
+  animation: textLoop 20s;
 }
 
 @keyframes revealText {

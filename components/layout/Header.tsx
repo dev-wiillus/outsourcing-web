@@ -4,7 +4,7 @@ import Image from "next/image";
 
 function Header() {
 	return (
-		<header className="fixed z-10 flex h-[56px] w-full items-center justify-between bg-white bg-opacity-90 px-4 shadow md:container md:px-10">
+		<header className="fixed z-10 flex h-[56px] w-full items-center justify-between bg-white bg-opacity-90 px-4 md:container md:px-10">
 			<Link href="/" className="flex items-baseline gap-x-3 text-2xl font-bold">
 				<Image
 					src="/images/logo/wiillus_logo.svg"

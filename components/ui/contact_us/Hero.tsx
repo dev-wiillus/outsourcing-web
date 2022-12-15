@@ -8,7 +8,7 @@ export default function Hero() {
 			title="contact"
 			bgSrcMobile="/images/contact/hero_bg.png"
 			bgSrcWeb="/images/contact/hero_bg.png"
-			className="items-center"
+			className="h-[720px] items-center text-center"
 		>
 			<div className="absolute inset-0 z-[-1] h-full w-full bg-black opacity-20" />
 			<div className="text-[60px] leading-[72.61px] text-white">
