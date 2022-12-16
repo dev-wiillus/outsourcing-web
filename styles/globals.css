@@ -60,32 +60,6 @@
   }
 }
 
-.flip-text {
-  height: 72.61px;
-  overflow: hidden;
-}
-
-.flip-text h1:first-child {
-  animation: text-animation 8s infinite;
-}
-
-/* TODO: 같은 방향으로만 돌도록 */
-@keyframes text-animation {
-  0% {margin-top: 0;}
-  11.5% {margin-top: 0;}
-  16.5% {margin-top: -72.61px;}
-  28% {margin-top: -72.61px;}
-  33% {margin-top: -145.22px;}
-  44.5% {margin-top: -145.22px;}
-  49.5% {margin-top: -217.83px;}
-  61% {margin-top: -217.83px;}
-  66% {margin-top: -145.22px;}
-  77.5% {margin-top: -145.22px;}
-  82.5% {margin-top: -72.61px;}
-  94% {margin-top: -72.61px;}
-  100% {margin-top: 0;}
-}
-
 #portfolio-item:hover > #mask {
     display: block;
     
@@ -104,6 +78,7 @@
 
 #portfolio-item:hover > #mask-text > #desc {
   animation: textLoop 20s;
+  animation-timing-function: linear;
 }
 
 @keyframes revealText {
@@ -119,11 +94,11 @@
 }
 
 @keyframes textLoop {
-  0% {
-    transform: "translate3d(-10%, 0, 0)";
+  0%, 5% {
+    transform: translate3d(0%, 0, 0);
   }
   100% {
-    transform: "translate3d(-110%, 0, 0)";
+    transform: translate3d(-110%, 0, 0);
   }
 }
 

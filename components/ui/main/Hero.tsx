@@ -2,30 +2,33 @@ import Link from "next/link";
 import Button from "../Button";
 import Container from "../Hero/Container";
 
-// TODO: 화면 top에 걸리면 애니메이션에 따라 스크롤 이동됨
 export default function Hero() {
 	return (
 		<Container
-			title="btrc"
-			bgSrcMobile="/images/main/hero_bg2.jpg"
-			bgSrcWeb="/images/main/hero_bg2.jpg"
+			title="coworking"
+			bgSrcMobile="/images/main/hero_bg.jpg"
+			bgSrcWeb="/images/main/hero_bg.jpg"
 		>
 			<div className="mx-auto text-center text-[60px] leading-[72.61px]">
 				<div className="font-bold">
-					<div className="flex gap-x-4">
-						<div className="flip-text">
+					<div className="flex h-[72.61px] gap-x-4 overflow-hidden">
+						<div className="animate-[text-animation_6s_linear_infinite]">
 							<h1>Grow</h1>
 							<h1>Build</h1>
 							<h1>Make</h1>
 							<h1>Boost</h1>
+							<h1>Grow</h1>
 						</div>
 						<h1>your</h1>
 					</div>
-					<div className="flip-text mt-1 text-primary">
-						<h1>Business</h1>
-						<h1>Brand</h1>
-						<h1>Products</h1>
-						<h1>Sales</h1>
+					<div className="mt-1 h-[72.61px] overflow-hidden">
+						<div className="animate-[text-animation_6s_linear_infinite] text-primary">
+							<h1>Business</h1>
+							<h1>Brand</h1>
+							<h1>Products</h1>
+							<h1>Sales</h1>
+							<h1>Business</h1>
+						</div>
 					</div>
 				</div>
 				<div className="mt-[21px]">

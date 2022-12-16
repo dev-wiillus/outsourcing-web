@@ -11,7 +11,6 @@ export default function PortfolioItem({
 	title,
 	description,
 }: InputProps) {
-	console.log(image);
 	return (
 		<div
 			role="listitem"
@@ -24,7 +23,6 @@ export default function PortfolioItem({
 				fill
 				className="z-[-2]"
 			/>
-
 			<div
 				id="mask"
 				className="animate__animated animate__zoomIn absolute inset-0 z-[-1] hidden h-full w-full bg-black opacity-50"
@@ -33,7 +31,7 @@ export default function PortfolioItem({
 				id="mask-text"
 				className="top-1/2 flex -translate-y-1/2 flex-col gap-y-3 px-2 font-bold text-white opacity-0"
 			>
-				<h3 id="title" className="text-xl">
+				<h3 id="title" className="text-lg">
 					{title}
 				</h3>
 				<span id="desc" className="text-5xl">

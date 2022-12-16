@@ -17,7 +17,7 @@ export default function Container({
 }: InputProps) {
 	return (
 		<div
-			className={`relative flex h-screen flex-auto flex-col justify-center ${
+			className={`flex h-screen flex-auto flex-col justify-center ${
 				className || ""
 			}`}
 		>
@@ -27,12 +27,16 @@ export default function Container({
 					alt: title,
 					fill: true,
 					className: "z-[-2]",
+					sizes: "100vw",
+					priority: true,
 				}}
 				web={{
 					src: bgSrcWeb,
 					alt: title,
 					fill: true,
 					className: "z-[-2]",
+					sizes: "100vw",
+					priority: true,
 				}}
 			/>
 			{children}

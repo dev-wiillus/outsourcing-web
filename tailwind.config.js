@@ -43,7 +43,18 @@ module.exports = {
 						transform: "translate3d(-110%, 0, 0)",
 					},
 				},
-			}
+				"text-animation": {
+					"0%": { transform: "translate3d(0, 0, 0)" },
+					"20%": { transform: "translate3d(0, 0, 0)" },
+					"25%": { transform: "translate3d(0, -72.61px, 0)" },
+					"45%": { transform: "translate3d(0, -72.61px, 0)" },
+					"50%": { transform: "translate3d(0, -145.22px, 0)" },
+					"70%": { transform: "translate3d(0, -145.22px, 0)" },
+					"75%": { transform: "translate3d(0, -217.83px, 0)" },
+					"95%": { transform: "translate3d(0, -217.83px, 0)" },
+					"100%": { transform: "translate3d(0, -290.44px, 0)" },
+				},
+			},
 		},
 		container: {
 			center: true,

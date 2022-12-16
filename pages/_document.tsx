@@ -1,6 +1,6 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
 
-class BTRCDocument extends Document {
+class CoworkingDocument extends Document {
 	render() {
 		return (
 			<Html lang="ko">
@@ -15,4 +15,4 @@ class BTRCDocument extends Document {
 	}
 }
 
-export default BTRCDocument;
+export default CoworkingDocument;

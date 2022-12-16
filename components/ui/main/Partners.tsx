@@ -45,7 +45,7 @@ export default function Partners() {
 								alt={`logo-${image.split(".")[0]}`}
 								src={`/images/logo/${image}`}
 								width={181}
-								height={48}
+								height={181}
 							/>
 						</div>
 					))}
