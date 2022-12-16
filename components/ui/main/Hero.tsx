@@ -1,14 +1,17 @@
+import Image from "next/image";
 import Link from "next/link";
 import Button from "../Button";
-import Container from "../Hero/Container";
 
 export default function Hero() {
 	return (
-		<Container
-			title="coworking"
-			bgSrcMobile="/images/main/hero_bg.jpg"
-			bgSrcWeb="/images/main/hero_bg.jpg"
-		>
+		<div className="relative flex h-screen flex-col items-center justify-center text-center">
+			<Image
+				src="/images/main/hero_bg.jpg"
+				alt="main-bg"
+				fill
+				className="z-[-2]"
+				priority
+			/>
 			<div className="mx-auto text-center text-[60px] leading-[72.61px]">
 				<div className="font-bold">
 					<div className="flex h-[72.61px] gap-x-4 overflow-hidden">
@@ -39,6 +42,6 @@ export default function Hero() {
 					</Link>
 				</div>
 			</div>
-		</Container>
+		</div>
 	);
 }

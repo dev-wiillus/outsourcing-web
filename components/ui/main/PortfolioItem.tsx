@@ -22,6 +22,9 @@ export default function PortfolioItem({
 				src={image}
 				fill
 				className="z-[-2]"
+				sizes="(max-width: 640px) 100vw,
+              			(max-width: 1280px) 50vw,
+              			33vw"
 			/>
 			<div
 				id="mask"

@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { Fragment } from "react";
+import { Fragment, useEffect, useState } from "react";
 import Contact from "../components/ui/main/Contact";
 import Hero from "../components/ui/main/Hero";
 import How from "../components/ui/main/How";
@@ -10,6 +10,17 @@ import Target from "../components/ui/main/Target";
 
 // TODO: add favicon
 export default function HomePage(props: any) {
+	const [showChild, setShowChild] = useState(false);
+
+	// Wait until after client-side hydration to show
+	useEffect(() => {
+		setShowChild(true);
+	}, []);
+
+	if (!showChild) {
+		// You can show some kind of placeholder UI here
+		return null;
+	}
 	return (
 		<Fragment>
 			<Head>

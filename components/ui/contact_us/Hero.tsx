@@ -1,15 +1,17 @@
+import Image from "next/image";
 import Link from "next/link";
 import Button from "../Button";
-import Container from "../Hero/Container";
 
 export default function Hero() {
 	return (
-		<Container
-			title="contact"
-			bgSrcMobile="/images/contact/hero_bg.png"
-			bgSrcWeb="/images/contact/hero_bg.png"
-			className="h-[720px] items-center text-center"
-		>
+		<div className="relative flex h-[720px] flex-col items-center justify-center text-center">
+			<Image
+				src="/images/contact/hero_bg.png"
+				alt="contact-bg"
+				fill
+				className="z-[-2]"
+				priority
+			/>
 			<div className="absolute inset-0 z-[-1] h-full w-full bg-black opacity-20" />
 			<div className="text-[60px] leading-[72.61px] text-white">
 				<div className="font-bold">
@@ -24,6 +26,6 @@ export default function Hero() {
 					</Link>
 				</div>
 			</div>
-		</Container>
+		</div>
 	);
 }

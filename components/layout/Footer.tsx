@@ -8,7 +8,8 @@ function Footer() {
 					src="/images/logo/wiillus_black.png"
 					alt="Logo"
 					width={59}
-					height={22}
+					height={59}
+					priority
 				/>
 				<div className="flex flex-col gap-y-2.5 text-2xs text-text-secondary">
 					<p>

@@ -16,7 +16,13 @@ export default function Service() {
 			<div className="hero">
 				<div className="hero-content flex-col lg:flex-row">
 					<div className="relative h-[600px] w-[600px] flex-1">
-						<Image src="/images/main/service.png" alt="service-image" fill />
+						<Image
+							src="/images/main/service.png"
+							alt="service-image"
+							fill
+							sizes="(max-width: 640px) 100vw
+									50vw"
+						/>
 					</div>
 					<div className="flex flex-1 flex-col gap-y-[50px]">
 						{services.map((service, index) => (
