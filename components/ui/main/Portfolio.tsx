@@ -37,69 +37,69 @@ export default function Portfolio() {
 
 const portfolios = [
 	{
-		image: "/images/main/portfolio/galaxy-fold.jpg",
+		image: "/images/main/portfolio/삼성갤럭시.jpg",
 		title: "삼성전자 - 갤럭시S / 노트 런칭 캠페인",
 		description:
 			"Strategic Planning / Website / Influencer / Performance Marketing",
 	},
 	{
-		image: "/images/main/portfolio/삼성페이.png",
+		image: "/images/main/portfolio/삼성페이.jpg",
 		title: "삼성전자 - 삼성페이 글로벌 런칭 캠페인",
 		description: "Strategic Planning / App / SNS Marketing / Consumer Survey",
 	},
 	{
-		image: "/images/main/portfolio/삼성전자B2B.webp",
+		image: "/images/main/portfolio/삼성b2b.jpg",
 		title: "삼성전자 - B2B 온라인 마케팅",
 		description:
 			"Strategic Planning / SNS Marketing / Video / Stakeholder Engagement",
 	},
 	{
-		image: "/images/main/portfolio/LG전자.jpg",
+		image: "/images/main/portfolio/LG전자.jpg",
 		title: "LG전자 - G시리즈 인플루언서 캠페인",
 		description: "Influencer / SNS Marketing / Blog",
 	},
 	{
-		image: "/images/main/portfolio/벤틀리.png",
+		image: "/images/main/portfolio/벤틀리.jpg",
 		title: "벤틀리 - SNS 마케팅 / 히어로 콘텐츠 제작",
 		description: "Strategic Planning / SNS Marketing / Video",
 	},
 	{
-		image: "/images/main/portfolio/미미박스.jpeg",
+		image: "/images/main/portfolio/미미박스.jpg",
 		title: "미미박스 - 미디어 제휴",
 		description: "Stakeholder Engagement / PR",
 	},
 	{
-		image: "/images/main/portfolio/맥도날드.jpeg",
+		image: "/images/main/portfolio/맥도날드.jpg",
 		title: "맥도날드 - 리브랜딩 / 마케팅 전략",
 		description: "Strategic Planning",
 	},
 	{
-		image: "/images/main/portfolio/BC카드.png",
+		image: "/images/main/portfolio/BC카드.jpg",
 		title: "BC카드 - 미디어 제휴",
 		description: "Video / SNS Marketing",
 	},
 	{
-		image: "/images/main/portfolio/SSG페이.jpeg",
+		image: "/images/main/portfolio/ssg페이.jpg",
 		title: "SSG PAY - 미디어 제휴, SNS 마케팅",
 		description: "SNS Marketing / PR",
 	},
 	{
-		image: "/images/main/portfolio/더소스랩.png",
+		image: "/images/main/portfolio/더소스랩.png",
 		title: "더소스랩 - 상품기획, 플랫폼 입점, SNS 마케팅",
 		description: "Strategic Planning / Re-branding / e-commerce",
 	},
 	{
-		image: "/images/main/portfolio/오픈팜.jpg",
+		image: "/images/main/portfolio/오픈팜.jpg",
 		title: "오픈팜 - 리브랜딩, 스마트스토어, 웹사이트",
 		description: "Strategic Planning / Re-branding / Website",
 	},
 	{
-		image: "/images/main/portfolio/베테랑고.png",
+		image: "/images/main/portfolio/베테랑고.jpg",
 		title: "베테랑고 - 웹사이트, 카카오 광고, 네이버 광고",
 		description: "Strategic Planning / Website / Performance Marketing",
 	},
 	{
-		image: "/images/main/portfolio/세핑몰.png",
+		image: "/images/main/portfolio/세핑몰.jpg",
 		title: "세핑몰 - 웹사이트, 구글/네이버 검색광고, 방송 광고",
 		description: "Strategic Planning / Website / Performance Marketing",
 	},

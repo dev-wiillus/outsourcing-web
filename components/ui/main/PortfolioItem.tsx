@@ -11,6 +11,7 @@ export default function PortfolioItem({
 	title,
 	description,
 }: InputProps) {
+	console.log(image);
 	return (
 		<div
 			role="listitem"
