@@ -20,39 +20,49 @@ export default function Target() {
 				defaults: { ease: "none", duration: 1 },
 			});
 
-			tl.to(
+			tl.from(
 				".target-bg",
 				{
-					transform: "scale(1.2)",
+					x: () =>
+						container.scrollHeight + document.documentElement.clientWidth,
 				},
 				0,
-			).from(
-				".target-message",
-				{ y: 100, opacity: 0, stagger: 0.4, duration: 0.8, delay: 2 },
-				0,
-			);
+			)
+				.to(
+					".target-bg",
+					{
+						x: () => 0,
+					},
+					0,
+				)
+				.from(
+					".target-message",
+					{ y: 100, opacity: 0, stagger: 0.4, duration: 0.8, delay: 2 },
+					0,
+				);
 			return () => {
 				tl.revert();
 			};
 		}
 	}, [gsap]);
 	return (
-		<div className="target-container relative flex h-[720px] flex-col overflow-hidden">
+		<div className="target-container relative flex h-[720px] flex-col overflow-hidden bg-[#FFD91B]">
 			<Image
 				alt="target-bg"
-				src="/images/main/target_bg.png"
-				fill
-				className="target-bg z-[-2]"
+				src="/images/main/target_bg_web.png"
+				width={948}
+				height={560}
+				className="target-bg absolute top-0 right-0 z-[-2]"
 			/>
-			<div className="absolute inset-0 z-[-1] h-full w-full bg-black opacity-20" />
-			<div className="flex flex-auto flex-col items-center justify-center gap-y-[43px] text-center">
-				<div className="target-message text-[60px] font-bold leading-[72.61px]">
-					<h1>Major company to</h1>
-					<h1 className="text-primary">Startups</h1>
+			<div className="ml-[96px] mb-[120px] flex flex-auto flex-col justify-end gap-y-[20px] font-semibold">
+				<div className="target-message text-[16px] leading-[24px]">
+					<span>Major company to </span>
+					<span className="text-primary">Startups</span>
 				</div>
-				<div className="target-message text-[30px] leading-[36.31px]">
+				<div className="target-message text-[40px] leading-[56px]">
 					<p>국내외 유수 기업부터 스타트업까지,</p>
-					<p>다양한 백그라운드의 마케팅, 브랜딩, 제품기획가가 함께 합니다</p>
+					<p>다양한 백그라운드의 </p>
+					<p>마케팅, 브랜딩, 제품기획가가 함께 합니다</p>
 				</div>
 			</div>
 		</div>

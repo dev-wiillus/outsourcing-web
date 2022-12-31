@@ -26,7 +26,7 @@ export default function Portfolio() {
 				</section>
 			</div>
 			<Button
-				className="btn-secondary mt-20 rounded-full md:w-[272px]"
+				className="btn-secondary mt-20 rounded-full md:h-[60px] md:w-[220px]"
 				onClick={() => setExpandAll(!expandAll)}
 			>
 				{expandAll ? "접기" : "더보기"}

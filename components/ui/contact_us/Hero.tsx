@@ -4,19 +4,19 @@ import Button from "../Button";
 
 export default function Hero() {
 	return (
-		<div className="relative flex h-[720px] flex-col items-center justify-center text-center">
+		<div className="relative z-[-3] flex h-[720px] flex-col justify-center bg-gradient-to-b from-[#D9CFC3] to-[#E1D8CF]">
 			<Image
-				src="/images/contact/hero_bg.png"
+				src="/images/contact/hero_bg_web.png"
 				alt="contact-bg"
-				fill
-				className="z-[-2]"
+				width={1080}
+				height={670}
+				className="how-bg absolute right-0 bottom-0 z-[-2]"
 				priority
 			/>
-			<div className="absolute inset-0 z-[-1] h-full w-full bg-black opacity-20" />
-			<div className="text-[60px] leading-[72.61px] text-white">
+			<div className="ml-[128px] text-[60px] leading-[72.61px]">
 				<div className="font-bold">
 					<h1>Meet with</h1>
-					<h1 className="mt-1">team slash</h1>
+					<h1 className="mt-1 text-primary">team slash!</h1>
 				</div>
 				<div className="mt-[21px]">
 					<Link href="#contact-application">
