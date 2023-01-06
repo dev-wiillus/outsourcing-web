@@ -8,16 +8,19 @@ export default function Portfolio() {
 	return (
 		<div className="flex flex-col items-center px-[50px] py-[80px]">
 			<div className="flex flex-col self-start py-16 font-bold">
-				<span className=" text-[60px] font-bold leading-[72.61px] text-primary">
+				<span className="text-[18px] font-bold leading-[21.78px] text-primary lg:text-[60px] lg:leading-[72.61px]">
 					Our Portfolio
 				</span>
 
-				<h1 className="mt-2 text-[90px] leading-[101px] md:mt-8 lg:mt-0">
+				<h1 className="mt-2 text-[28px] leading-[33.89px] md:mt-8 lg:mt-0 lg:text-[90px] lg:leading-[101px]">
 					Featured projects
 				</h1>
 			</div>
-			<div className="w-full flex-auto">
-				<section role="list" className="relative grid w-full grid-cols-3">
+			<div className="flex-auto">
+				<section
+					role="list"
+					className="relative grid grid-cols-1 lg:grid-cols-3"
+				>
 					{(expandAll ? portfolios : portfolios.slice(0, 9)).map(
 						(portfolio, index) => (
 							<PortfolioItem key={index} {...portfolio} />
@@ -26,7 +29,7 @@ export default function Portfolio() {
 				</section>
 			</div>
 			<Button
-				className="btn-secondary mt-20 rounded-full md:h-[60px] md:w-[220px]"
+				className="btn-secondary mt-20 h-[60px] w-[220px] rounded-full"
 				onClick={() => setExpandAll(!expandAll)}
 			>
 				{expandAll ? "접기" : "더보기"}

@@ -70,7 +70,7 @@ export default function Form() {
 
 	return (
 		<form
-			className="form-control gap-y-8 md:gap-y-[92px]"
+			className="form-control gap-y-8 px-[24px] md:gap-y-[92px] lg:px-0"
 			onSubmit={handleSubmit(onSubmit)}
 		>
 			<div className="form-control w-full items-start gap-4 text-[18px]">
@@ -126,7 +126,7 @@ export default function Form() {
 				<label className="text-base font-bold text-text-primary">
 					문의유형
 				</label>
-				<div className="grid grid-cols-3 gap-x-10 gap-y-4">
+				<div className="grid grid-cols-1 gap-x-10 gap-y-4 lg:grid-cols-3">
 					{contactOptions?.map(({ label, ...rest }) => (
 						<div key={rest.value}>
 							<label className="flex cursor-pointer gap-x-2">

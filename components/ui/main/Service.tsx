@@ -1,30 +1,73 @@
 import Image from "next/image";
+import { useEffect } from "react";
+import useGsap from "../../utils/useGsap";
 import ServiceCard from "./ServiceCard";
 
 export default function Service() {
+	const gsap = useGsap();
+	useEffect(() => {
+		const serviceContainer = document.querySelector(".service-container");
+		const container = document.querySelector(".service");
+		if (container) {
+			const tl = gsap.timeline({
+				scrollTrigger: {
+					trigger: serviceContainer,
+					// start: "top bottom", // the default values
+					// end: "bottom top",
+					scrub: true,
+				},
+
+				// scrollTrigger: {
+				// 	scrub: true,
+				// 	trigger: serviceContainer,
+				// 	end: () =>
+				// 		container.scrollHeight - document.documentElement.clientHeight,
+				// },
+				defaults: { ease: "none" },
+			});
+
+			tl.to(
+				".mobile-image",
+				{
+					y: () => container.scrollHeight,
+					// yPercent: -100,
+					// y: () =>
+					// 	-(container.scrollHeight - document.documentElement.clientHeight),
+				},
+				0,
+			);
+		}
+	});
 	return (
 		<div id="service" className="min-h-[720px] p-[50px]">
 			<div className="flex flex-col py-16 font-bold">
-				<span className=" text-[60px] font-bold leading-[72.61px] text-primary">
+				<span className="text-[18px] font-bold leading-[21.78px] text-primary lg:text-[60px] lg:leading-[72.61px]">
 					Our Services
 				</span>
 
-				<h1 className="mt-2 text-[90px] leading-[101px] md:mt-8 lg:mt-0">
+				<h1 className="mt-2 text-[28px] leading-[33.89px] md:mt-8 lg:mt-0 lg:text-[90px] lg:leading-[101px]">
 					Super talented at...
 				</h1>
 			</div>
-			<div className="hero">
+			<div className="service-container hero relative">
 				<div className="hero-content flex-col lg:flex-row">
-					<div className="relative h-[600px] w-[600px] flex-1">
+					<Image
+						src="/images/main/service.png"
+						alt="service-image"
+						width={360}
+						height={360}
+						className="mobile-image absolute top-[-100px] right-0 z-[-1] opacity-20 lg:hidden"
+					/>
+					<div className="relative hidden h-[600px] w-[600px] flex-1 lg:block">
 						<Image
 							src="/images/main/service.png"
 							alt="service-image"
 							fill
-							sizes="(max-width: 640px) 100vw
+							sizes="(max-Height: 640px) 100vw
 									50vw"
 						/>
 					</div>
-					<div className="flex flex-1 flex-col gap-y-[50px]">
+					<div className="service flex flex-1 flex-col gap-y-[50px] text-center lg:text-left">
 						{services.map((service, index) => (
 							<ServiceCard key={index} {...service} />
 						))}

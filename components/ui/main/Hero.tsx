@@ -5,13 +5,24 @@ import Button from "../Button";
 export default function Hero() {
 	return (
 		<div className="relative flex h-screen flex-col items-center justify-center text-center">
-			<Image
-				src="/images/main/hero_bg.jpg"
-				alt="main-bg"
-				fill
-				className="z-[-2]"
-				priority
-			/>
+			<div className="hidden lg:block">
+				<Image
+					src="/images/main/hero_bg_web.jpg"
+					alt="main-bg"
+					fill
+					className="z-[-2]"
+					priority
+				/>
+			</div>
+			<div className="block lg:hidden">
+				<Image
+					src="/images/main/hero_bg_web.jpg"
+					alt="main-bg"
+					fill
+					className="z-[-2]"
+					priority
+				/>
+			</div>
 			<div className="mx-auto text-center text-[60px] leading-[72.61px]">
 				<div className="font-bold">
 					<div className="flex h-[72.61px] gap-x-4 overflow-hidden">
@@ -36,7 +47,7 @@ export default function Hero() {
 				</div>
 				<div className="mt-[21px]">
 					<Link href="contact-us">
-						<Button className="btn-primary rounded-full md:w-[272px]">
+						<Button className="btn-primary w-[220px] rounded-full">
 							더 알아보기
 						</Button>
 					</Link>

@@ -6,20 +6,31 @@ export default function Contact() {
 	return (
 		<>
 			<div className="relative flex h-[720px] flex-col">
-				<Image
-					alt="target-bg"
-					src="/images/main/contact_bg.png"
-					fill
-					className="z-[-2]"
-				/>
-				<div className="ml-[95px] mt-[188px]">
-					<div className="text-[60px] font-bold leading-[72.61px]">
+				<div className="hidden lg:block">
+					<Image
+						alt="how-bg"
+						src="/images/main/contact_bg_web.png"
+						fill
+						className="z-[-2]"
+					/>
+				</div>
+				<div className="block lg:hidden">
+					<Image
+						alt="how-bg"
+						src="/images/main/contact_bg_mobile.png"
+						width={360}
+						height={290}
+						className="absolute bottom-0 left-1/2 z-[-2] -translate-x-1/2"
+					/>
+				</div>
+				<div className="mx-auto mt-[120px] text-center lg:ml-[95px] lg:mt-[188px] lg:text-left">
+					<div className="text-center text-[48px] font-bold leading-[56px] lg:text-left lg:text-[60px] lg:leading-[72.61px]">
 						<h2>Start with</h2>
 						<h2 className="text-primary">team slash!</h2>
 					</div>
 					<div className="mt-[32px]">
 						<Link href="contact-us">
-							<Button className="btn-primary rounded-full md:h-[60px] md:w-[220px]">
+							<Button className="btn-primary h-[60px] w-[220px] rounded-full">
 								더 알아보기
 							</Button>
 						</Link>

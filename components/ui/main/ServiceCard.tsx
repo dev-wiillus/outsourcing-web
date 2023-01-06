@@ -13,20 +13,20 @@ export default function ServiceCard({ contentProps }: InputProps) {
 	useRevealAnimation();
 	return (
 		<div>
-			<h3 className="mr-2 inline-block text-[44px] font-bold leading-[50px]">
+			<h3 className="mr-2 mb-[40px] inline-block text-[28px] font-bold leading-[50px] lg:text-[44px] lg:leading-[33.89px]">
 				{contentProps.title}
 			</h3>
 
-			<p className="break-keep text-[18px] font-semibold leading-[26px] text-text-secondary">
+			<div className="break-keep text-[18px] font-semibold leading-[26px] text-text-secondary">
 				{contentProps.content.map((content, index) => (
-					<span key={index}>
+					<div key={index} className="mb-[32px] lg:mb-0">
 						{content}
 						{index + 1 !== contentProps.content.length && (
-							<span className="mx-1 text-text-primary">&</span>
+							<br className="block lg:hidden" />
 						)}
-					</span>
+					</div>
 				))}
-			</p>
+			</div>
 		</div>
 	);
 }

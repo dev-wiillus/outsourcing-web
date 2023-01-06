@@ -38,15 +38,25 @@ export default function Partners() {
 	return (
 		<div id="partners" className="flex flex-col items-center gap-y-12">
 			<div className="slider">
-				<div className="slide-track gap-x-20">
+				<div className="slide-track gap-x-12 lg:gap-x-20">
 					{multipliedPartners.map(({ image }, index) => (
 						<div className="slide" key={index}>
-							<Image
-								alt={`logo-${image.split(".")[0]}`}
-								src={`/images/logo/${image}`}
-								width={181}
-								height={181}
-							/>
+							<div className="hidden lg:block">
+								<Image
+									alt={`logo-${image.split(".")[0]}`}
+									src={`/images/logo/${image}`}
+									width={181}
+									height={181}
+								/>
+							</div>
+							<div className="block lg:hidden">
+								<Image
+									alt={`logo-${image.split(".")[0]}`}
+									src={`/images/logo/${image}`}
+									width={90.5}
+									height={90.5}
+								/>
+							</div>
 						</div>
 					))}
 				</div>

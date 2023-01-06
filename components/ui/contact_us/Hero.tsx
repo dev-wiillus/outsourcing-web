@@ -4,23 +4,34 @@ import Button from "../Button";
 
 export default function Hero() {
 	return (
-		<div className="relative z-[-3] flex h-[720px] flex-col justify-center bg-gradient-to-b from-[#D9CFC3] to-[#E1D8CF]">
-			<Image
-				src="/images/contact/hero_bg_web.png"
-				alt="contact-bg"
-				width={1080}
-				height={670}
-				className="how-bg absolute right-0 bottom-0 z-[-2]"
-				priority
-			/>
-			<div className="ml-[128px] text-[60px] leading-[72.61px]">
+		<div className="relative z-[-3] flex h-screen flex-col bg-gradient-to-b from-[#DCD2C7] to-[#D8CEC2] lg:h-[720px] lg:justify-center">
+			<div className="hidden lg:block">
+				<Image
+					src="/images/contact/hero_bg_web.png"
+					alt="contact-bg"
+					fill
+					className="z-[-2]"
+					priority
+				/>
+			</div>
+			<div className="block lg:hidden">
+				<Image
+					src="/images/contact/hero_bg_mobile.png"
+					alt="contact-bg"
+					width={360}
+					height={348}
+					className="absolute bottom-0 z-[-2]"
+					priority
+				/>
+			</div>
+			<div className="mx-auto mt-[176px] text-center text-[48px] leading-[56px] lg:mt-0 lg:ml-[128px] lg:text-left lg:text-[60px] lg:leading-[72.61px]">
 				<div className="font-bold">
 					<h1>Meet with</h1>
 					<h1 className="mt-1 text-primary">team slash!</h1>
 				</div>
 				<div className="mt-[21px]">
 					<Link href="#contact-application">
-						<Button className="btn-primary rounded-full md:w-[272px]">
+						<Button className="btn-primary h-[60px] w-[220px] rounded-full">
 							문의하기
 						</Button>
 					</Link>

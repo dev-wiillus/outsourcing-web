@@ -15,7 +15,7 @@ export default function PortfolioItem({
 		<div
 			role="listitem"
 			id="portfolio-item"
-			className="relative h-[400px] cursor-pointer overflow-hidden"
+			className="relative h-[400px] max-w-[400px] cursor-pointer overflow-hidden"
 		>
 			<Image
 				alt={`portfolio-item-bg-${title}`}
