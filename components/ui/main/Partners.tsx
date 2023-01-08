@@ -33,7 +33,18 @@ const partners = [
 	},
 ];
 
-const multipliedPartners = [...partners, ...partners, ...partners];
+const multipliedPartners = [
+	...partners,
+	...partners,
+	...partners,
+	...partners,
+	...partners,
+	...partners,
+	...partners,
+	...partners,
+	...partners,
+	...partners,
+];
 export default function Partners() {
 	return (
 		<div id="partners" className="flex flex-col items-center gap-y-12">
@@ -53,8 +64,8 @@ export default function Partners() {
 								<Image
 									alt={`logo-${image.split(".")[0]}`}
 									src={`/images/logo/${image}`}
-									width={90.5}
-									height={90.5}
+									width={140}
+									height={140}
 								/>
 							</div>
 						</div>

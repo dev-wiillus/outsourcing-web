@@ -3,7 +3,6 @@ import NotificationContext from "../../store/notification-context";
 import Notification from "../ui/Notification";
 import Footer from "./Footer";
 import Header from "./Header";
-import Homebar from "./Homebar";
 
 function Layout({ children }: any) {
 	const notificationCtx = useContext(NotificationContext);
@@ -15,7 +14,6 @@ function Layout({ children }: any) {
 			<Header />
 			<main>{children}</main>
 			<Footer />
-			<Homebar />
 			{activeNotification && <Notification {...activeNotification} />}
 		</div>
 	);

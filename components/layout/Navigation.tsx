@@ -7,17 +7,19 @@ const menu = [
 ];
 
 function Navigation() {
+	const MenuList = menu?.map(({ name, path }) => (
+		<li key={path} className="py-1 lg:p-6">
+			<Link href={path}>{name}</Link>
+		</li>
+	));
 	return (
-		<nav>
-			<ul className="flex">
-				{menu?.map(({ name, path }) => (
-					<li
-						key={path}
-						className="p-4 text-xs font-bold text-primary md:p-6 lg:text-sm"
-					>
-						<Link href={path}>{name}</Link>
-					</li>
-				))}
+		<nav className="text-xs font-bold text-primary lg:text-sm">
+			<ul className="hidden lg:flex">{MenuList}</ul>
+			<ul
+				tabIndex={0}
+				className="dropdown-content menu rounded-box menu-compact mt-3 w-52 bg-base-100 p-2 shadow lg:hidden"
+			>
+				{MenuList}
 			</ul>
 		</nav>
 	);

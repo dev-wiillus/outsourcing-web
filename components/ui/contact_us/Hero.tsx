@@ -4,13 +4,14 @@ import Button from "../Button";
 
 export default function Hero() {
 	return (
-		<div className="relative z-[-3] flex h-screen flex-col bg-gradient-to-b from-[#DCD2C7] to-[#D8CEC2] lg:h-[720px] lg:justify-center">
+		<div className="relative z-[-3] flex h-screen flex-col bg-gradient-to-b from-[#DCD2C7] to-[#E1D8CF] lg:h-[670px] lg:justify-center lg:from-[#D9CFC3]">
 			<div className="hidden lg:block">
 				<Image
 					src="/images/contact/hero_bg_web.png"
 					alt="contact-bg"
-					fill
-					className="z-[-2]"
+					width={1280}
+					height={670}
+					className="absolute top-0 z-[-2]"
 					priority
 				/>
 			</div>
@@ -20,7 +21,7 @@ export default function Hero() {
 					alt="contact-bg"
 					width={360}
 					height={348}
-					className="absolute bottom-0 z-[-2]"
+					className="absolute bottom-0 right-0 z-[-2]"
 					priority
 				/>
 			</div>
