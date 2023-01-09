@@ -3,7 +3,7 @@ import Button from "../Button";
 
 export default function Hero() {
 	return (
-		<div className="relative flex h-screen flex-col items-center justify-center bg-[url('/images/main/hero_bg_web.jpg')] bg-contain bg-bottom bg-no-repeat text-center md:justify-start md:pt-[160px]">
+		<div className="relative flex h-screen flex-col items-center justify-center bg-[url('/images/main/hero_bg_web.jpg')] bg-contain bg-bottom bg-no-repeat text-center lg:h-[720px] lg:justify-start lg:pt-[160px]">
 			<div className="mx-auto text-center text-[56px] leading-[64px] lg:text-[80px] lg:leading-[96px]">
 				<div className="font-bold">
 					<div className="flex h-[64px] gap-x-4 overflow-hidden lg:h-[96px]">
