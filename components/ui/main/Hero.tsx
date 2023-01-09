@@ -3,7 +3,7 @@ import Button from "../Button";
 
 export default function Hero() {
 	return (
-		<div className="relative flex h-screen flex-col items-center bg-[url('/images/main/hero_bg_web.jpg')] bg-contain bg-bottom bg-no-repeat pt-[160px] text-center lg:justify-center lg:pt-0">
+		<div className="relative flex h-screen flex-col items-center justify-center bg-[url('/images/main/hero_bg_web.jpg')] bg-contain bg-bottom bg-no-repeat text-center md:justify-start md:pt-[160px]">
 			<div className="mx-auto text-center text-[56px] leading-[64px] lg:text-[80px] lg:leading-[96px]">
 				<div className="font-bold">
 					<div className="flex h-[64px] gap-x-4 overflow-hidden lg:h-[96px]">
@@ -26,7 +26,7 @@ export default function Hero() {
 						</div>
 					</div>
 				</div>
-				<div className="mt-[21px]">
+				<div className="mt-[21px] lg:mt-[8px]">
 					<Link href="contact-us">
 						<Button className="btn-primary w-[220px] rounded-full">
 							더 알아보기

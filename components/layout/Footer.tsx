@@ -18,9 +18,9 @@ function Footer() {
 					<p>
 						<span>주소: 서울시 용산구 이태원로 223-5 2층</span>
 					</p>
-					<p>
+					{/* <p>
 						<span>개인정보처리담당 김창민 | robin@wiillus.com</span>
-					</p>
+					</p> */}
 				</div>
 			</div>
 			<div className="flex flex-col gap-y-2 text-2xs font-semibold text-text-light-primary">
