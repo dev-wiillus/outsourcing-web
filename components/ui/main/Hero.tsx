@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import Button from "../Button";
 
@@ -35,36 +34,6 @@ export default function Hero() {
 					</Link>
 				</div>
 			</div>
-			{/* <div className="hidden lg:block">
-				<Image
-					src="/images/main/hero_bg_web.jpg"
-					alt="main-bg"
-					width={1280}
-					height={1080}
-					className="z-[-2]"
-					priority
-				/>
-			</div>
-			<div className="hidden md:block lg:hidden">
-				<Image
-					src="/images/main/hero_bg_web.jpg"
-					alt="main-bg"
-					width={720}
-					height={604}
-					className="z-[-2]"
-					priority
-				/>
-			</div>
-			<div className="block md:hidden">
-				<Image
-					src="/images/main/hero_bg_web.jpg"
-					alt="main-bg"
-					width={360}
-					height={302}
-					className="z-[-2]"
-					priority
-				/>
-			</div> */}
 		</div>
 	);
 }

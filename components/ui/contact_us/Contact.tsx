@@ -12,7 +12,7 @@ export default function Contact() {
 					<h1 className="text-primary">Great stories</h1>
 				</div>
 				<div className="text-[14px] leading-[18px] lg:text-[30px] lg:leading-[44px]">
-					<p>일을 사랑하는 팀 슬래시와</p>
+					<p>일을 사랑하는 팀 윌러스와</p>
 					<p>고민은 나누고, 성장인 함께</p>
 				</div>
 			</div>

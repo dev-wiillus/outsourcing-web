@@ -12,17 +12,9 @@ export default function Service() {
 			const tl = gsap.timeline({
 				scrollTrigger: {
 					trigger: serviceContainer,
-					// start: "top bottom", // the default values
-					// end: "bottom top",
 					scrub: true,
 				},
 
-				// scrollTrigger: {
-				// 	scrub: true,
-				// 	trigger: serviceContainer,
-				// 	end: () =>
-				// 		container.scrollHeight - document.documentElement.clientHeight,
-				// },
 				defaults: { ease: "none" },
 			});
 
@@ -30,9 +22,6 @@ export default function Service() {
 				".mobile-image",
 				{
 					y: () => container.scrollHeight,
-					// yPercent: -100,
-					// y: () =>
-					// 	-(container.scrollHeight - document.documentElement.clientHeight),
 				},
 				0,
 			);

@@ -4,8 +4,8 @@ import Image from "next/image";
 
 function Header() {
 	return (
-		<header className="navbar fixed z-10 h-[100px] justify-between bg-transparent bg-opacity-90 px-4 lg:container lg:bg-white">
-			<div className="navbar-start">
+		<header className="navbar fixed z-10 h-[100px] justify-between bg-transparent bg-opacity-90 px-4 lg:container">
+			<div className="navbar-start pl-[24px] lg:pl-[32px]">
 				<div className="hidden lg:block">
 					<Link
 						href="/"

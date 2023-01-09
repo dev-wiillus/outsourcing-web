@@ -47,7 +47,15 @@ const multipliedPartners = [
 ];
 export default function Partners() {
 	return (
-		<div id="partners" className="flex flex-col items-center gap-y-12">
+		<div
+			id="partners"
+			className="mb-[63.5px] mt-[64px] flex flex-col items-center justify-between gap-y-[24px] lg:mb-[80px] lg:mt-[120px]"
+		>
+			<div className="">
+				<h1 className="text-[28px] font-bold leading-[33.89px] lg:text-[56px] lg:leading-[67.77px]">
+					Our Partners
+				</h1>
+			</div>
 			<div className="slider">
 				<div className="slide-track gap-x-12 lg:gap-x-20">
 					{multipliedPartners.map(({ image }, index) => (
@@ -56,16 +64,16 @@ export default function Partners() {
 								<Image
 									alt={`logo-${image.split(".")[0]}`}
 									src={`/images/logo/${image}`}
-									width={181}
-									height={181}
+									width={300}
+									height={300}
 								/>
 							</div>
 							<div className="block lg:hidden">
 								<Image
 									alt={`logo-${image.split(".")[0]}`}
 									src={`/images/logo/${image}`}
-									width={140}
-									height={140}
+									width={160}
+									height={160}
 								/>
 							</div>
 						</div>
