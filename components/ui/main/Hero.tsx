@@ -27,7 +27,7 @@ export default function Hero() {
 					</div>
 				</div>
 				<div className="mt-[21px] lg:mt-[8px]">
-					<Link href="contact-us">
+					<Link href="/#target">
 						<Button className="btn-primary w-[220px] rounded-full">
 							더 알아보기
 						</Button>

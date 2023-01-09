@@ -46,7 +46,10 @@ export default function Target() {
 		}
 	}, [gsap]);
 	return (
-		<div className="target-container relative flex h-[560px] flex-col overflow-hidden bg-[#FFD91B] lg:h-[720px]">
+		<div
+			id="target"
+			className="target-container relative flex h-[560px] flex-col overflow-hidden bg-[#FFD91B] lg:h-[720px]"
+		>
 			<div className="hidden lg:block">
 				<Image
 					alt="target-bg"

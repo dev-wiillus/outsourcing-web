@@ -13,7 +13,7 @@ export default function Contact() {
 				</div>
 				<div className="text-[14px] leading-[18px] lg:text-[30px] lg:leading-[44px]">
 					<p>일을 사랑하는 팀 윌러스와</p>
-					<p>고민은 나누고, 성장인 함께</p>
+					<p>고민은 나누고, 성장은 함께</p>
 				</div>
 			</div>
 			<Form />

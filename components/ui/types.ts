@@ -4,7 +4,7 @@ export interface RadioOptionProps {
 	checked?: boolean;
 }
 
-export type ContactType = "marketing" | "branding" | "planning" | "etc";
+export type ContactType = "branding" | "content" | "dev" | "marketing" | "new-biz" | "etc";
 
 export type ApiResponseType = {
 	ok: boolean;

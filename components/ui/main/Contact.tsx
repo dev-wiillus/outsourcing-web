@@ -26,12 +26,12 @@ export default function Contact() {
 				<div className="mx-auto mt-[120px] text-center lg:ml-[95px] lg:mt-[188px] lg:text-left">
 					<div className="text-center text-[48px] font-bold leading-[56px] lg:text-left lg:text-[60px] lg:leading-[72.61px]">
 						<h2>Start with</h2>
-						<h2 className="text-primary">team slash!</h2>
+						<h2 className="text-primary">team wiillus!</h2>
 					</div>
 					<div className="mt-[32px]">
 						<Link href="contact-us">
 							<Button className="btn-primary h-[60px] w-[220px] rounded-full">
-								더 알아보기
+								문의하기
 							</Button>
 						</Link>
 					</div>
