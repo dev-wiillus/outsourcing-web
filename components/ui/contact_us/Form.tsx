@@ -54,7 +54,7 @@ export default function Form() {
 			.then((data: ApiResponseType) => {
 				notificationCtx.showNotification({
 					title: "성공!",
-					message: `${TITLE}가 완료되었습니다.`,
+					message: "문의가 완료 되었습니다. 24시간 이내로 연락 드리겠습니다.",
 					status: "success",
 				});
 				router.push("/");
@@ -74,7 +74,7 @@ export default function Form() {
 			onSubmit={handleSubmit(onSubmit)}
 		>
 			<div className="form-control w-full items-start gap-4 text-[18px]">
-				<label className="text-base font-bold text-text-primary">
+				<label className="required text-base font-bold text-text-primary">
 					기본 정보
 				</label>
 				<input
@@ -123,7 +123,7 @@ export default function Form() {
 				)}
 			</div>
 			<div className="form-control w-full items-start gap-4 text-[18px]">
-				<label className="text-base font-bold text-text-primary">
+				<label className="required text-base font-bold text-text-primary">
 					문의유형
 				</label>
 				<div className="grid grid-cols-1 gap-x-10 gap-y-4 lg:grid-cols-3">
@@ -161,9 +161,7 @@ export default function Form() {
 					/>
 				</div>
 			</div>
-			<Button className="btn-primary" disabled={!isValid}>
-				문의하기
-			</Button>
+			<Button className="btn-primary">문의하기</Button>
 		</form>
 	);
 }

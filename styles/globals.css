@@ -156,3 +156,8 @@
   width: calc(300px * 10 * 10);
   align-items: center;
 }
+
+.required:after {
+  content:" *";
+  color: red;
+}
